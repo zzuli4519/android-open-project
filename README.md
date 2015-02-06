@@ -1,9 +1,13 @@
 Android开源项目分类汇总
 ====================
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Trinea/android-open-project?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-> 如果你也对开源实现库的实现原理感兴趣，欢迎 Star 和 Fork [Android优秀开源项目实现原理解析](https://github.com/android-cn/android-open-project-analysis)  
-> 欢迎加入 QQ 交流群：[185715999(入群理由必须填写群简介问题答案)](http://jq.qq.com/?_wv=1027&k=fJlrh1 "入群理由必须填写群简介问题答案")(六群)  [377723625](http://shang.qq.com/wpa/qunwpa?idkey=12ba39b0c3f5d27620ab0cb63ff80507a8a30fd743a11fad028e7742a871e0dc "入群理由必须填写群简介问题答案")(一群已满) [383537512](http://shang.qq.com/wpa/qunwpa?idkey=69b7c4278fc3a33690d4847ed7f9a72b9e4feb51221265a7326cf5261ccd5862 "入群理由必须填写群简介问题答案")(二群已满) [63224677](http://shang.qq.com/wpa/qunwpa?idkey=fb2eaf0c4b4a8c838ad15e6bdd69d901f038a50f4a77360845b9e6d7ee0ba3ee "入群理由必须填写群简介问题答案")(三群已满) [148844489](http://shang.qq.com/wpa/qunwpa?idkey=5dc2f22b2f9fe3b6136f9cad29399713b118bfaa9a2330e410757362a37572bc "入群理由必须填写群简介问题答案")(四群已满) [214742675](http://jq.qq.com/?_wv=1027&k=Zl6Yyj "入群理由必须填写群简介问题答案")(五群已满) 不要重复加群  
+###[Android 开源项目源码解析第一期正式发布](http://codekk.com)  
+
+`codeKK`专注于开源项目源码解析、开源项目分享、Android 职位推荐。  
+> 我们的网站：[www.codekk.com](http://codekk.com)  
+ 我们的微博：[code-kk](http://weibo.com/codek2)  
+ 我们的微信：codekk，二维码如下：  
+ ![img](https://raw.githubusercontent.com/aosp-exchange-group/about/master/weixin-qrcode.jpg) 
 
 欢迎大家推荐好的Android开源项目，可直接[Commit](https://github.com/Trinea/android-open-project/wiki "请遵守<内容添加及编辑规范>")，欢迎`Star`、`Fork` :)  
 > **关于我，欢迎关注**  
@@ -31,7 +35,7 @@ Android开源项目分类汇总
 
 #### 一、ListView  
 1. android-pulltorefresh  
-一个强大的拉动刷新开源项目，支持各种控件下拉刷新，ListView、ViewPager、WevView、ExpandableListView、GridView、ScrollView、Horizontal  ScrollView、Fragment上下左右拉动刷新，比下面johannilsson那个只支持ListView的强大的多。并且它实现的下拉刷新ListView在item不足一屏情况下也不会显示刷新提示，体验更好。  
+一个强大的拉动刷新开源项目，支持各种控件下拉刷新，ListView、ViewPager、WebView、ExpandableListView、GridView、ScrollView、Horizontal  ScrollView、Fragment上下左右拉动刷新，比下面johannilsson那个只支持ListView的强大的多。并且它实现的下拉刷新ListView在item不足一屏情况下也不会显示刷新提示，体验更好。  
 项目地址：https://github.com/chrisbanes/Android-PullToRefresh  
 Demo地址：https://github.com/Trinea/TrineaDownload/blob/master/pull-to-refreshview-demo.apk?raw=true  
 APP示例：新浪微博各个页面  
@@ -218,6 +222,17 @@ Header 和 Content Item 都可以展开的 ExpandableListview
 效果图：![Renderings](https://raw.githubusercontent.com/JorgeCastilloPrz/PagedHeadListView/master/app/src/main/res/raw/preview1.gif)  
 <a href="https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC" title="返回目录" style="width:100%"><img src="http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png" align="right"/></a>  
 
+1. CustomSwipeListView  
+支持左滑弹出自定义菜单，右滑删除且允许撤销，同时可以自定义滑动动画时间和滑动触发事件的时机等。   
+项目地址：https://github.com/xyczero/Android-CustomSwipeListView   
+效果图：![screenshot](http://7u2jsw.com1.z0.glb.clouddn.com/githubCustomSwipeListview_Set.PNG)   
+Demo地址：[Download here](http://7u2jsw.com1.z0.glb.clouddn.com/githubCustomSwipeListView.apk)   
+
+1. Pull-to-Refresh.Rentals-Android  
+提供一个简单可以自定义的下拉刷新实现，[Yalantis](http://yalantis.com/) 出品。  
+项目地址：https://github.com/Yalantis/Pull-to-Refresh.Rentals-Android  
+效果图：![Renderings](https://camo.githubusercontent.com/d406ac5a03a2b1fa5cf41fadc8d2408cb8709bdc/68747470733a2f2f6431337961637572716a676172612e636c6f756466726f6e742e6e65742f75736572732f3132353035362f73637265656e73686f74732f313635303331372f7265616c6573746174652d70756c6c5f312d322d332e676966)  
+
 #### 二、ActionBar  
 1. ActionBarSherlock  
 为Android所有版本提供统一的ActionBar，解决4.0以下ActionBar的适配问题  
@@ -332,6 +347,16 @@ Material Design 形式的展开折叠Icon
 项目地址：https://github.com/shamanland/floating-action-button  
 效果图：![Renderings](https://camo.githubusercontent.com/c679cb23cf62830b0d4037e17cf2d8d4090bc3c8/68747470733a2f2f64726976652e676f6f676c652e636f6d2f75633f69643d3042776830534e4c506d6a5142526b466f5a4530345646393051324d)  
 <a href="https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC" title="返回目录" style="width:100%"><img src="http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png" align="right"/></a>  
+
+1. Side-Menu.Android  
+分类侧滑菜单，[Yalantis](http://yalantis.com/) 出品。  
+项目地址：https://github.com/Yalantis/Side-Menu.Android  
+效果图：![Renderings](https://camo.githubusercontent.com/cb6caa7a392d01d46bca9d9485c01fc173f55fac/68747470733a2f2f6431337961637572716a676172612e636c6f756466726f6e742e6e65742f75736572732f3132353035362f73637265656e73686f74732f313638393932322f6576656e74732d6d656e755f312d312d362e676966)  
+
+1. Context-Menu.Android  
+可以方便快速集成漂亮带有动画效果的上下文菜单，[Yalantis](http://yalantis.com/)出品。  
+项目地址：https://github.com/Yalantis/Context-Menu.Android  
+效果图：![Renderings](https://camo.githubusercontent.com/46c15734b552ce3afefa7efd1518909046b4677e/68747470733a2f2f6431337961637572716a676172612e636c6f756466726f6e742e6e65742f75736572732f3132353035362f73637265656e73686f74732f313738353237342f39396d696c65732d70726f66696c652d6c696768745f312d312d342e676966)  
 
 #### 四、ViewPager 、Gallery  
 1. Android-ViewPagerIndicator  
@@ -581,13 +606,18 @@ APP示例：Android4.1时钟App
 项目地址：https://github.com/Sefford/CircularProgressDrawable  
 效果图：![Renderings](https://raw.githubusercontent.com/Sefford/CircularProgressDrawable/master/overshoot.gif)  
 
+1. Android-RoundCornerProgressBar  
+Android 圆角 ProgressBar，可自定义圆角颜色和半径，包括带 Icon 和不带 Icon 两种类型。  
+项目地址：https://github.com/akexorcist/Android-RoundCornerProgressBar  
+效果图：![Renderings](https://raw.githubusercontent.com/akexorcist/Android-RoundCornerProgressBar/master/image/screenshot_02.png)  
+
 1. circular-progress-button  
 带进度显示的Button  
 项目地址：https://github.com/dmytrodanylyk/circular-progress-button  
 效果图：![Renderings](https://raw.githubusercontent.com/dmytrodanylyk/circular-progress-button/master/screenshots/intro.gif)  
 
 1. WaveView  
-一个波纹效果的 View，可用来坐 ProgressBar  
+一个波纹效果的 View，可用来做 ProgressBar  
 项目地址：https://github.com/john990/WaveView  
 Demo地址：https://raw.github.com/john990/WaveView/master/screenshot%26apk/demo.unaligned.apk  
 效果图：![Renderings](https://camo.githubusercontent.com/60722e9d4f2d2daa78a8650cb27a32adea82bdd4/68747470733a2f2f7261772e6769746875622e636f6d2f6a6f686e3939302f57617665566965772f6d61737465722f73637265656e73686f7425323661706b2f73637265656e73686f742e676966)  
@@ -850,7 +880,12 @@ Material Design 风格的 Toast，类似 Google inbox 中的提示
 项目地址：https://github.com/MrEngineer13/SnackBar  
 Demo地址：https://play.google.com/store/apps/details?id=com.mrengineer13.snackbar.sample  
 效果图：![Renderings](https://camo.githubusercontent.com/67a39af16f3d46631567c1f7bd7dcddeb3c4c9e9/687474703a2f2f6d6174657269616c2d64657369676e2e73746f726167652e676f6f676c65617069732e636f6d2f696d616765732f636f6d706f6e656e74732d746f617374732d73706563732d737065635f746f6173745f30335f315f6c617267655f6d6470692e706e67)  
-<a href="https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC" title="返回目录" style="width:100%"><img src="http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png" align="right"/></a>  
+
+1. HeadsUp  
+在2.3上使用 android  5.0的 HeadsUp 效果  
+项目地址：https://github.com/zzz40500/HeadsUp  
+效果图：![heads-up.gif](http://upload-images.jianshu.io/upload_images/166866-543a5d26ab71d0f6.gif)  
+<a href="https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC" title="返回目录" style="width:100%"><img src="http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png" align="right"/></a>   
 
 #### 十二、FlipView  
 1. android-flip  
